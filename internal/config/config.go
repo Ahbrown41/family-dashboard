@@ -20,8 +20,6 @@ type Screen struct {
 
 type Ticktick struct {
 	ApiUrl       string `yaml:"api_url" mapstructure:"api_url"`
-	Username     string `yaml:"username"`
-	Password     string `yaml:"password"`
 	AccessToken  string `yaml:"access_token" mapstructure:"access_token"`
 	FocusProject string `yaml:"focus_project" mapstructure:"focus_project"`
 }

@@ -37,7 +37,6 @@ func (p *Print) DrawCalendar(x float64, y float64, date time.Time) (float64, flo
 		for day := float64(0); day <= 6; day++ {
 			x1 := x + (30 * day)
 			if !started {
-				fmt.Printf("%d %d\n", dayOfWeek(firstDay), day)
 				if dayOfWeek(firstDay) == day {
 					started = true
 				}
