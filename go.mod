@@ -6,7 +6,7 @@ require (
 	github.com/MaxHalford/halfgone v0.0.0-20171017091812-482157b86ccb
 	github.com/fatih/color v1.16.0
 	github.com/fogleman/gg v1.3.0
-	github.com/go-resty/resty/v2 v2.10.0
+	github.com/go-resty/resty/v2 v2.11.0
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
 	github.com/jarcoal/httpmock v1.3.1
 	github.com/skratchdot/open-golang v0.0.0-20200116055534-eef842397966
