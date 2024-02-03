@@ -16,6 +16,8 @@ dashboard leverages a Waveshare 7.5inch e-Paper HAT for Raspberry Pi.
 ```shell
 $ go build -o family-dashboard .
 ```
+
+## Configuration
 - Update Configuration file `config.yaml` with the appropriate settings.
 ```yaml
 screen:
@@ -23,17 +25,25 @@ screen:
 ticktick:
   api_url: https://api.ticktick.com/open/v1
   focus_project: Your Focus Project ID
-  username: Tick Tick Username
-  password: Tick Tick Password
   access_token: The access token from the Tick Tick API
 todoist:
   api_url: https://api.todoist.com/rest/v2
-  access_token: Use .env file
-  project: Use .env file
+  access_token: The access token from the Todoist API
+  project: Your Project ID
   labels:
-    - Family
+    - Label ID
 ```
-- Run the application using
+In addition you can use environment variables or a ".env" file to set the configuration.  The following environment variables are supported:
+```shell
+SCREEN.OUTPUT=png
+TICKTICK.ACCESS_TOKEN=XXX
+TICKTICK.FOCUS_PROJECT=XXX
+TODOIST.ACCESS_TOKEN=XXX
+TODOIST.PROJECT=XXX
+TODOIST.LABELS=XXX
+```
+
+- Run the application using the following to test it out
 ```shell
 $ ./family-dashboard
 ```
