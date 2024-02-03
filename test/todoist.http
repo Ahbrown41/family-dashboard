@@ -1,0 +1,3 @@
+### Get tasks by label
+GET {{todoist_url}}/tasks?labels={{label_name}}
+Authorization: Bearer {{todoist_token}}

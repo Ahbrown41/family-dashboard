@@ -1,0 +1,11 @@
+### Get Project List
+GET {{ticktick_url}}/project
+Authorization: Bearer {{ticktick_token}}
+
+### Get Project Tasks
+GET {{ticktick_url}}/project/{{ticktick_project_id}}/data
+Authorization: Bearer {{ticktick_token}}
+
+### Get Task Details
+GET {{ticktick_url}}/project/{{ticktick_project_id}}/task/{{ticktick_task_id}}
+Authorization: Bearer {{ticktick_token}}

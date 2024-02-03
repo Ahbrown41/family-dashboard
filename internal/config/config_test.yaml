@@ -1,0 +1,15 @@
+screen:
+  output: test_output
+ticktick:
+  api_url: "test_api_url"
+  focus_project: test_focus_project
+  username: test_user
+  password: test_password
+  access_token: test_access_token
+todoist:
+  api_url: "test_api_url"
+  access_token: test_access_token
+  project: test_project
+  labels:
+      - test_label1
+      - test_label2
