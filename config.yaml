@@ -1,0 +1,14 @@
+screen:
+  output: epaper
+ticktick:
+  api_url: https://api.ticktick.com/open/v1
+  focus_project: Use .env file
+  username: Use .env file
+  password: Use .env file
+  access_token: Use .env file
+todoist:
+  api_url: https://api.todoist.com/rest/v2
+  access_token: Use .env file
+  project: Use .env file
+  labels:
+    - Family
