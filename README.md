@@ -34,6 +34,7 @@ todoist:
     - Label ID
 ```
 In addition you can use environment variables or a ".env" file to set the configuration.  The following environment variables are supported:
+The environment variables take precedence over the `config.yaml` configuration file.
 ```shell
 SCREEN.OUTPUT=png
 TICKTICK.ACCESS_TOKEN=XXX
@@ -43,7 +44,13 @@ TODOIST.PROJECT=XXX
 TODOIST.LABELS=XXX
 ```
 
+## Running the Application
+
 - Run the application using the following to test it out
 ```shell
 $ ./family-dashboard
+```
+- Setting up the application to run on boot on a schedule
+```shell
+
 ```
