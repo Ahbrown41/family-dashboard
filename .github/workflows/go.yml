@@ -24,11 +24,11 @@ jobs:
     - name: Test
       run: go test -v ./...
 
-    - name: Build
-      run: go build go build -o ./family-dashboard -v ./...
+    - name: Build Linux
+      run: go build go build -v -o ./family-dashboard .
 
     - name: Build Raspberry Pi
-      run: env GOOS=linux GOARCH=arm GOARM=5 go build -o ./family-dashboard-pi -v ./...
+      run: env GOOS=linux GOARCH=arm GOARM=5 go build -v -o ./family-dashboard-pi .
 
     - name: Create Release
       id: create_release
