@@ -25,7 +25,7 @@ jobs:
       run: go test -v ./...
 
     - name: Build Linux
-      run: go build go build -v -o ./family-dashboard .
+      run: go build -v -o ./family-dashboard .
 
     - name: Build Raspberry Pi
       run: env GOOS=linux GOARCH=arm GOARM=5 go build -v -o ./family-dashboard-pi .
